@@ -1,0 +1,26 @@
+[
+    {
+        "minValue": 0,
+        "maxValue": 600,
+        "Value": 230,
+        "Status": "Open"
+    },
+    {
+        "minValue": 0,
+        "maxValue": 600,
+        "Value": 111,
+        "Status": "Pending"
+    },
+    {
+        "minValue": 0,
+        "maxValue": 600,
+        "Value": 589,
+        "Status": "Resolved"
+    },
+    {
+        "minValue": 0,
+        "maxValue": 600,
+        "Value": 493,
+        "Status": "Close:Resolved"
+    }
+]

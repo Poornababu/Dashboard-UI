@@ -1,0 +1,179 @@
+:root {
+  --primary: #151138;
+  --secondary: #272950; 
+  --white:#fff;
+  --lt-grey:#e1e1e6;
+  --font-family: "Inter", sans-serif;
+}
+* {
+  margin: 0; padding:0; box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+  background-color:var(--primary);
+  color: var(--white);
+  padding: 12px;
+  font-family:var(--font-family);
+}
+
+.ui-box, .ui-dashboard{
+  display: flex;
+  gap: 12px;
+}
+
+.ui-left {
+width: 25%;
+}
+.ui-middle {
+  width: 50%;
+}
+.ui-right{
+  width: 25%;
+}
+.ui-bg {
+  background-color: var(--secondary);
+  border-radius: 8px;
+  padding: 12px;
+}
+.ui-title {
+  font-size:18px;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+.ui-sub-title {
+  font-size:17px;
+  font-weight: 400;
+  padding-bottom: 15px;
+}
+.ui-img {
+width: 200px;margin: 0 auto;
+display: block;
+}
+.mb-12 {
+  margin-bottom: 12px;
+}
+.ui-today-box {
+  padding: 27px 0;
+}
+.ui-today-box h4{
+    font-size: 44px;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+.ui-today-box h4 span {
+  font-size: 24px;
+  padding-left: 4px;
+
+}
+.ui-today-box p{
+  color: #c5ccde;
+  font-size: 15px;
+  font-weight:400;
+}
+
+.ui-tickets {
+ 
+}
+.ui-tickets-solve, .ui-tickets-status {
+  width: 50%;
+}
+.ui-tickets-list {
+  display: flex;
+  justify-content: space-between;
+  color: var(--white);
+  border-bottom: 1px solid #383a5e;
+  padding: 11px 0;
+}
+
+.ui-tickets-list:last-child{
+  border-bottom: none;
+}
+
+
+/* ProgressBar */
+
+.ui-progress {
+  margin-bottom: 56px;
+  margin-top: 10px;
+}
+.progress-bar {
+  width: 100%;
+  background-color: #36385c;
+  height: 3px;
+}
+
+.progress-bar-fill {
+  height: 100%;
+    background-color: #5fcefa;
+    width: 0;
+    transition: width 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: inherit;
+    color: white;
+    font-weight: bold;
+    height: 5px;
+    top: -1px;
+    position: relative;
+}
+
+.progress-bar-label {
+  margin-bottom:7px;
+  display: flex;
+  justify-content: space-between;
+}
+.progress-bar-label span {
+  color: var(--white);
+}
+.ui-doughnut {
+  width: 220px;
+  margin: 0 auto;
+}
+
+.ui-doughnut canvas {
+  margin-top: -40px;
+}
+
+
+/* // Tablet */
+
+@media (max-width:1000px) {
+
+  .ui-box, .ui-dashboard {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .ui-left, .ui-right, .ui-middle {
+    width: 49%;
+  }
+  .ui-tickets-solve, .ui-tickets-status {
+    width: 100%;
+  }
+
+}
+
+/* // Mobile */
+
+@media (max-width:600px) {
+
+  .ui-box, .ui-dashboard {
+    flex-direction: column;
+  }
+  .ui-left, .ui-right, .ui-middle {
+    width: 100%;
+  }
+  .ui-tickets-solve, .ui-tickets-status {
+    width: 100%;
+  }
+
+}
+
+
+
+
